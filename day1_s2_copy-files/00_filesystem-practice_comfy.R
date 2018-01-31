@@ -1,3 +1,8 @@
+#' ---
+#' output: github_document
+#' ---
+
+#' Libraries
 library(fs)
 
 ## Outline of how I would copy the .R files from, e.g.,
@@ -54,7 +59,6 @@ file.copy(from_files, to_files)
 ##   * not so bad: path is absolute
 ## use RStudio's autocomplete to help you avoid typos
 ## path_home() might be handy
-ex1_path <- normilze_path(path_home(),)
 ## use dir_exists() to check you have successfully stored the path
 
 ## list files in the other project
@@ -73,7 +77,6 @@ ex1_path <- normilze_path(path_home(),)
 
 ## copy the files and store the result
 out <- file_copy(from_files, to_files)
-
 ## inspect the result: notice that it's handy to see the actual paths that were
 ## copied to!
 
