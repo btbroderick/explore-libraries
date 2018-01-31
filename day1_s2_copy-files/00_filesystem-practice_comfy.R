@@ -1,3 +1,5 @@
+library(fs)
+
 ## Outline of how I would copy the .R files from, e.g.,
 ## ~/Desktop/day1_s1_explore-libraries
 ## to the current project
@@ -44,9 +46,6 @@ file.copy(from_files, to_files)
 ## list the files here (and look in file browser) to verify success
 
 ## Using the fs package ----
-
-## install.packages("fs")
-library(fs)
 
 ## store the path to the other project
 ## try to practice "safe file paths" -- but first, just make it work!
