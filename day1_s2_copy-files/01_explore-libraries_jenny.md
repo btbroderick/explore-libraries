@@ -1,38 +1,10 @@
 01\_explore-libraries\_jenny.R
 ================
 rvbguy1000
-Wed Jan 31 14:05:59 2018
-
-``` r
-## how jenny might do this in a first exploration
-## purposely leaving a few things to change later!
-```
-
-Which libraries does R search for packages?
-
-``` r
-.libPaths()
-```
-
-    ## [1] "/Library/Frameworks/R.framework/Versions/3.4/Resources/library"
-
-``` r
-## let's confirm the second element is, in fact, the default library
-.Library
-```
-
-    ## [1] "/Library/Frameworks/R.framework/Resources/library"
+Wed Jan 31 14:32:48 2018
 
 ``` r
 library(fs)
-path_real(.Library)
-```
-
-    ## /Library/Frameworks/R.framework/Versions/3.4/Resources/library
-
-Installed packages
-
-``` r
 library(tidyverse)
 ```
 
@@ -46,6 +18,8 @@ library(tidyverse)
     ## ── Conflicts ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
     ## ✖ dplyr::filter() masks stats::filter()
     ## ✖ dplyr::lag()    masks stats::lag()
+
+Installed packages
 
 ``` r
 ipt <- installed.packages() %>%
