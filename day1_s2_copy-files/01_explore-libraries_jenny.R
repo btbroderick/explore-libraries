@@ -2,6 +2,9 @@
 #' output: github_document
 #' ---
 
+library(fs)
+library(tidyverse)
+
 ## how jenny might do this in a first exploration
 ## purposely leaving a few things to change later!
 
@@ -10,11 +13,9 @@
 
 ## let's confirm the second element is, in fact, the default library
 .Library
-library(fs)
 path_real(.Library)
 
 #' Installed packages
-library(tidyverse)
 ipt <- installed.packages() %>%
   as_tibble()
 
